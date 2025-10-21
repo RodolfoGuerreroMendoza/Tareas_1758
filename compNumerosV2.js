@@ -31,3 +31,4 @@ document.getElementById('comparador-form').addEventListener('submit',
     }
 );
 
+
