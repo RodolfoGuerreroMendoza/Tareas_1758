@@ -9,7 +9,7 @@ document.getElementById('comparador-form').addEventListener('submit',
         let numero2 = parseInt(document.getElementById('num2').value);
         let resultado;
 
-        // valida que sean enteros válidos
+        // valida que sean enteros
         if (isNaN(numero1) || isNaN(numero2) 
             || !Number.isInteger(Number(document.getElementById('num1').value)) 
             || !Number.isInteger(Number(document.getElementById('num2').value))){
@@ -30,3 +30,4 @@ document.getElementById('comparador-form').addEventListener('submit',
         document.getElementById('result').innerHTML = resultado;
     }
 );
+
