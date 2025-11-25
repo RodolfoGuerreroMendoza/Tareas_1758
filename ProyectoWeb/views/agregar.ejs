@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Usuario</title>
+    <link rel="stylesheet" href="/estilos.css">
+</head>
+<body>
+    <h1>Agregar Usuario Nuevo</h1>
+    
+    <form action="/add" method="post">
+        <label>Nombre del Usuario:</label>
+        <input type="text" name="name" required>
+
+        <label>Correo:</label>
+        <input type="email" name="email" required>
+        
+        <label>Contraseña:</label>
+        <input type="password" name="password" required>
+        
+        <button type="submit">Guardar Usuario</button>
+        <a href="/">Cancelar</a>
+    </form>
+</body>
+</html>

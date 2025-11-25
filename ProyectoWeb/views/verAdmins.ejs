@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Administradores</title>
+    <link rel="stylesheet" href="/estilos.css">
+</head>
+<body>
+
+    <h1>Administradores del Sistema</h1>
+    
+    <h3 style="color: white;">Total registrados: <%= admins.length %></h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                </tr>
+        </thead>
+        <tbody>
+            <% admins.forEach((admin, index) => { %>
+            <tr>
+                <td><%= index + 1 %></td>
+                <td><%= admin.name %></td>
+                <td><%= admin.email %></td>
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+
+    <div style="margin-top: 20px;">
+        <a href="/" class="btn-logout" style="background-color: #3498db;">Volver al Inicio</a>
+    </div>
+
+</body>
+</html>
